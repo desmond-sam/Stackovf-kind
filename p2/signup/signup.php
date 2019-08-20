@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-
+<html>
+<body>
 <?php
 	if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 		echo "1st step";
@@ -41,15 +42,31 @@ EOD;
 }
 
 ?>
-<html>
-<body>
 
-	<form method="POST">
-		<input type="name" required name="username"> Username: </input>
-		<input name = "email" required type="email"> Email: </input>
-		<input name = "password" required type="password"> Password: </input>
-		<input name = "rpassword" required type="password"> Re-enter Password: </input>
-		<button name = "submit" type="submit"> Sign up </button>
+	<form method="POST" >
+		<table>
+			<tr>
+				<td class="inpf">Username:</td>
+				<td><input type="text" required name="username" class="textInput"></td>
+			</tr>
+			<tr>
+				<td class="inpf">Email:</td>
+				<td><input type="email" required name="email" class="textInput"></td>
+			</tr>
+			<tr>
+				<td class="inpf">Password:</td>
+				<td><input type="password" required name="password" class="textInput"></td>
+			</tr>
+			<tr>
+				<td class="inpf">Re-enter Password:</td>
+				<td><input type="password" required name="rpassword" class="textInput"></td>
+			</tr>
+			<tr>
+				<td>Already a user? <a href="/p2/login/login.php">login here</a></td>
+				<td><input type="submit" name="submit" value="Register"></td>
+			</tr>
+		</table>
 	</form>
+	
 </body>
 </html>
