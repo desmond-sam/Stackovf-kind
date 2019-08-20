@@ -42,7 +42,7 @@
 			</tr>
 			<tr>
 				<td>Not already a user? <a href="/p2/signup/signup.php">register here</a></td>
-				<td><input type="submit" name="login_btn" value="Login"></td>
+				<td><input type="submit" name="submit" value="submit"></td>
 			</tr>
 		</table>
 	</form>
