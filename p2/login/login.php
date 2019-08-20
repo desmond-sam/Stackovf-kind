@@ -30,10 +30,21 @@
 <html>
 <body>
 
-	<form method="POST">
-		<input name = "email" type="email"> Email: </input>
-		<input name = "password" type="password"> Password: </input>
-		<button name = "submit" type="submit"> Log-In </button>
+	<form method="POST" >
+		<table>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" class="textInput"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" class="textInput"></td>
+			</tr>
+			<tr>
+				<td>Not already a user? <a href="/p2/signup/signup.php">register here</a></td>
+				<td><input type="submit" name="login_btn" value="Login"></td>
+			</tr>
+		</table>
 	</form>
 
 </body>
